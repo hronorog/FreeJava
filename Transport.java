@@ -6,6 +6,7 @@ public class Transport {
     private String color;
     private byte[] coordinate;
 
+
     public Transport(float speed, int weight, String color, byte[] coordinate) {
         setValues(speed, weight, color, coordinate);
         System.out.println(getValues());
