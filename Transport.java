@@ -43,7 +43,7 @@ public abstract class Transport {
         private boolean isReady;
         private  int km;
 
-        public  Engine(boolean isReady, int km) {
+        public void setValues(boolean isReady, int km) {
             this.isReady = isReady;
             this.km = km;
         }
@@ -52,7 +52,7 @@ public abstract class Transport {
             if (isReady) {
                 System.out.println("Двигатель исправен");
             } else {
-                System.out.println("нет, он не работает. Он проехал уже " + km + " км");
+                System.out.println("Нет, он не работает. Он проехал уже " + km + " км");
             }
         }
     }
