@@ -37,4 +37,23 @@ public abstract class Transport {
         }
         return info + infoCoordinates;
     }
+
+    class Engine {
+
+        private boolean isReady;
+        private  int km;
+
+        public  Engine(boolean isReady, int km) {
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void info() {
+            if (isReady) {
+                System.out.println("Двигатель исправен");
+            } else {
+                System.out.println("нет, он не работает. Он проехал уже " + km + " км");
+            }
+        }
+    }
 }
