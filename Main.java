@@ -10,6 +10,8 @@ public class Main {
         Car bmw = new Car(250.5f, 2500, "White", new byte[] {0, 0, 0});
         bmw.engine.setValues(false, 2000);
         bmw.engine.info();
+        bmw.setLight(true);
+        bmw.blinkLight();
 
         Truck truck = new Truck(5600, new byte[] {100, 0, 100}, false);
         truck.engine.setValues(true, 500);
